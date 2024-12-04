@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 2 exemplo 9 - Never TS Udemy</title>
+</head>
+
+<body>
+  <h1>Dia 2 exemplo 9 - Never</h1>
+
+  <p>O exemplo a seguir mostra como utilizar o tipo <code>never</code> em TypeScript. O tipo <code>never</code> é usado para funções que nunca retornam, geralmente porque elas lançam um erro ou entram em um loop infinito:</p>
+
+  <pre>
+    <code>
+      function geradorError(messagem: string, codigo: number): never { // Função que retorna o tipo "never" e lança um erro
+          throw { message: messagem, errorCode: codigo }; // A função lança um erro com uma mensagem e um código de erro
+      }
+
+      geradorError("deu xabu", 13); // Chama a função geradora de erro com mensagem e código
+      console.log(geradorError("deu xabu", 13)); // Não será executado, pois a função irá lançar um erro
+    </code>
+  </pre>
+
+  <script src="./prod/index.js"></script>
+</body>
+
+
+  
+
+
+
+
+</html>

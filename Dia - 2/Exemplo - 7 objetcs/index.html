@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 2 exemplo 7 - Objetos TS Udemy</title>
+</head>
+
+<body>
+    <h1>Dia 2 exemplo 7 - Objetos</h1>
+  
+    <p>O primeiro exemplo mostra como o TypeScript consegue identificar automaticamente os tipos das propriedades de um objeto:</p>
+    <pre>
+      <code>
+        const user = {
+            nome: "zile",
+            idade: 20,
+            sexo: "m"
+        }; // O TS automaticamente identifica os tipos das propriedades como string para nome, number para idade e string para sexo
+      </code>
+    </pre>
+  
+    <p>O segundo exemplo define explicitamente os tipos das propriedades de um objeto, caso você queira ser mais específico:</p>
+    <pre>
+      <code>
+        const user2: {
+            Nome: string,
+            Idade: number,
+            Sexo: string
+        } = {
+            Nome: "zile",
+            Idade: 20,
+            Sexo: "m"
+        }; // Definição explícita dos tipos para as propriedades
+      </code>
+    </pre>
+  
+    <script src="./prod/index.js"></script>
+  </body>
+  
+
+
+
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 2 exemplo 8 - unknown TS Udemy</title>
+</head>
+
+<body>
+  <h1>Dia 2 exemplo 8 - Unknown</h1>
+
+  <pre>
+    <code>
+      let input: unknown; // Variável definida como tipo desconhecido
+      let nome: string;
+
+      input = 10; // A variável de tipo desconhecido pode receber um número
+      input = "abc"; // Também pode receber uma string
+
+      // nome = input; // Não é possível atribuir uma variável de tipo desconhecido diretamente a outra de tipo específico
+
+      if (typeof input === "string") {
+          nome = input; // Após verificar o tipo, podemos atribuir a variável de tipo desconhecido à variável de tipo string
+          console.log(nome);
+      } // É necessário garantir que o tipo de input seja compatível com a variável nome
+    </code>
+  </pre>
+
+  <script src="./prod/index.js"></script>
+</body>
+
+  
+
+
+
+
+</html>

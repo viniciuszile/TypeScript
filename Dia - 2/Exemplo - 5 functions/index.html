@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 2 exemplo 5 - functions curso TS Udemy</title>
+</head>
+
+<body>
+    <!-- Título do Exemplo -->
+    <h1>Dia 2 - Exemplo 5: Funções</h1>
+    
+    <!-- Explicação Geral -->
+    <p>As funções em TypeScript permitem definir o tipo dos parâmetros e o tipo de retorno, proporcionando maior segurança no código.</p>
+    
+    <!-- Exemplo de Função com Tipo de Retorno Definido -->
+    <h2>Exemplo 1: Definindo o Tipo de Retorno</h2>
+    <p><code>
+        function add (num1: number, num2: number): number {<br>
+        &nbsp;&nbsp;return num1 + num2;<br>
+        }
+    </code></p>
+    <p>Neste exemplo, o tipo de retorno é explicitamente definido como <code>number</code>, embora o TypeScript já pudesse inferir isso automaticamente.</p>
+    
+    <!-- Exemplo de Função sem Tipo de Retorno Explicitamente Definido -->
+    <h2>Exemplo 2: Tipo de Retorno Inferido</h2>
+    <p><code>
+        function add2 (num1: number, num2: number) {<br>
+        &nbsp;&nbsp;return num1 + num2;<br>
+        }
+    </code></p>
+    <p>Aqui, o tipo de retorno não é explicitamente definido, mas como os parâmetros são números, o retorno será inferido como <code>number</code>.</p>
+    
+    <!-- Exemplos de Chamadas -->
+    <h2>Chamadas de Função</h2>
+    <p><code>add(1, 2);</code> retorna <code>3</code>.</p>
+    <p><code>add2(4, 3);</code> retorna <code>7</code>.</p>
+
+    <script src="./prod/index.js"></script>
+</body>
+
+
+
+</html>

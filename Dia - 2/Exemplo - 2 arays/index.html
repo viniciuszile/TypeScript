@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 2 exemplo 2 - arays curso TS Udemy</title>
+</head>
+<body>
+    <!-- Título do Exemplo -->
+    <h1>Dia 2 - Exemplo 2</h1>
+    
+    <!-- Descrição do Primeiro Array -->
+    <h2>Array que aceita números e strings</h2>
+    <p>
+        Este array aceita tanto números quanto strings, permitindo maior flexibilidade. <br>
+        Exemplo: <span id="array1"></span>
+    </p>
+    
+    <!-- Descrição do Segundo Array -->
+    <h2>Array que aceita apenas números</h2>
+    <p>
+        Este array é configurado para aceitar apenas números, o que ajuda a evitar erros no futuro. <br>
+        Exemplo: <span id="array2"></span>
+    </p>
+    
+    <!-- Script com os Arrays -->
+    <script>
+        alert("Dia 2 exemplo 2");
+
+        // Array que aceita números e strings
+        let aray = [1, 2, 3, 4, 5, "a"]; 
+        document.getElementById("array1").textContent = JSON.stringify(aray);
+
+        // Array que aceita apenas números
+        let aray2 = [10, 20, 30];
+        document.getElementById("array2").textContent = JSON.stringify(aray2);
+    </script>
+</body>
+</html>
